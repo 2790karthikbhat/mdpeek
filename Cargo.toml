@@ -1,0 +1,33 @@
+[package]
+name = "mdpeek"
+version = "0.1.0"
+edition = "2024"
+description = "A fast, text-first Markdown viewer for every terminal"
+license = "MIT"
+repository = "https://github.com/2790karthikbhat/mdpeek"
+homepage = "https://github.com/2790karthikbhat/mdpeek"
+readme = "README.md"
+keywords = ["markdown", "terminal", "viewer", "pager", "tui"]
+categories = ["command-line-utilities", "text-processing"]
+rust-version = "1.91"
+exclude = [".github/", "scripts/", "AGENTS.md", "CLAUDE.md", "llms.txt", "HANDOFF.md", "PLAN.md", "research/", "notes/"]
+
+[dependencies]
+anyhow = "1.0.104"
+clap = { version = "4.6.8", features = ["derive"] }
+crossterm = "0.29.0"
+image = { version = "0.25.10", default-features = false, features = ["png", "jpeg", "gif", "webp"] }
+notify = "8.2.2"
+pulldown-cmark = { version = "0.13.6", default-features = false }
+ratatui = "0.30.2"
+ratatui-image = { version = "11.1.0", default-features = false, features = ["crossterm"] }
+syntect = { version = "5.3.0", default-features = false, features = ["default-fancy"] }
+unicode-width = "0.2.3"
+
+[dev-dependencies]
+insta = "1.49.0"
+
+[profile.release]
+lto = true
+codegen-units = 1
+strip = true

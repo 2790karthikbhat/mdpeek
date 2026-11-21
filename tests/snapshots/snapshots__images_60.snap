@@ -1,0 +1,14 @@
+---
+source: tests/snapshots.rs
+expression: "render(\"images.md\", 60, false)"
+---
+Images
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+[image: A red square]
+
+Inline [image: icon] inside text.
+
+[image: Remote]
+
+[image: HTML image]

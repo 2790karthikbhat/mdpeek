@@ -1,0 +1,19 @@
+# mdpeek
+
+> Fast, text-first Markdown viewer for the terminal, written in Rust. Body text is real terminal text (selectable, copyable); local images are drawn with kitty, sixel or iTerm2 graphics where supported and shown as `[image: alt]` placeholders elsewhere, including tmux. Linux, macOS and Windows. One static binary, no network access. MIT licensed.
+
+Install on macOS/Linux: `curl -fsSL https://raw.githubusercontent.com/2790karthikbhat/mdpeek/main/scripts/install.sh | sh`
+Install on Windows (PowerShell): `irm https://raw.githubusercontent.com/2790karthikbhat/mdpeek/main/scripts/install.ps1 | iex`
+Install with Rust: `cargo install mdpeek`. Verify: `mdpeek --version`.
+Non-interactive use (agents, scripts, CI): `mdpeek --plain --color never FILE`.
+
+## Docs
+
+- [README](https://github.com/2790karthikbhat/mdpeek/blob/main/README.md): features, install, usage, keys
+- [AGENTS.md](https://github.com/2790karthikbhat/mdpeek/blob/main/AGENTS.md): non-interactive install, agent usage, build and test commands, code layout, conventions
+
+## Optional
+
+- [Changelog](https://github.com/2790karthikbhat/mdpeek/blob/main/CHANGELOG.md): what changed in each release
+- [Releases](https://github.com/2790karthikbhat/mdpeek/releases): prebuilt binaries for Linux, macOS and Windows with SHA-256 checksums
+- [Install script](https://github.com/2790karthikbhat/mdpeek/blob/main/scripts/install.sh): what the one-line installer does

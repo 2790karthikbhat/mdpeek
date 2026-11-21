@@ -1,0 +1,39 @@
+---
+source: tests/snapshots.rs
+expression: "render(\"lists.md\", 60, false)"
+---
+Lists
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+• one
+• two
+  ◦ nested a
+  ◦ nested b
+    ▪ deep
+• three
+
+1. first
+2. second
+3. tenth-ish
+
+• [x] done task
+• [ ] open task with a long description that should wrap
+      nicely under the checkbox marker
+
+Loose list:
+
+• para one
+
+  continued
+
+• para two
+
+│ A quote with bold.
+│
+│ │ Nested quote.
+
+│ Note
+│ GitHub alert body.
+
+│ Warning
+│ Careful now.

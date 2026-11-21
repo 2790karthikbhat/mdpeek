@@ -1,0 +1,26 @@
+---
+source: tests/snapshots.rs
+expression: "render(\"tables.md\", 30, false)"
+---
+Tables
+━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+
+┌───────────┬────────┬───────┐
+│ Left      │ Center │ Right │
+├───────────┼────────┼───────┤
+│ a         │   b    │     c │
+│ longer    │  code  │    42 │
+│ cell      │        │       │
+└───────────┴────────┴───────┘
+
+┌────────┬───────────────────┐
+│ Name   │ Description       │
+├────────┼───────────────────┤
+│ mdpeek │ A text-first      │
+│        │ Markdown viewer   │
+│        │ that works in     │
+│        │ every terminal    │
+│        │ and draws images  │
+│        │ where it can      │
+│ 漢字   │ CJK width check   │
+└────────┴───────────────────┘
